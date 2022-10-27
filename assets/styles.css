@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#leaderboard {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#return-quiz {
+    margin: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#time-spent {
+    margin: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#quiz-area {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#start-quiz p {
+    margin: 20px;
+    padding: 20px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.button {
+    background-color: #9932CC;
+    color: white; 
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #9e54c4;
+}
+
+#submit-initials {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+textarea {
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    resize: none;
+}
