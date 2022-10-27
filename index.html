@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./Assets/styles.css">
+
+    <title>Quiz</title>
+
+</head>
+<body>
+
+
+<div id="quiz">
+    <div id="start-quiz">
+        <h2>JavaScript Quiz</h2>
+        <p>Click below to begin. Will you get the highest score?</p>
+        <button class="button" id="start-button">Start Quiz</button>
+    </div>
+    <div id="question-container" class="hide">
+        <div id="question-title">Question</div> 
+        <div id="answer-buttons" class="button-grid">
+            <button class="button" id="button-1">Answer 1</button>
+            <button class="button" id="button-2">Answer 2</button>
+            <button class="button" id="button-3">Answer 3</button>
+            <button class="button" id="button-4">Answer 4</button>
+        </div>
+        <div id="answer-display" class="hide">
+            <h3></h3>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="next-button" class="next-button button hide">Next Question</button>
+    </div>
+    <div id="quiz-complete">
+        <div id="end-quiz" class="hide">
+            <h2>You completed the quiz!</h2>
+            <p>Enter your initials below to store your score.</p>
+            <textarea rows="1" cols="10" placeholder="ABC" id="enter-intials"></textarea>
+            <br>
+            <button class="button" id="submit-initials">Submit</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
